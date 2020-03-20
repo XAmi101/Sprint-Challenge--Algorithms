@@ -13,5 +13,5 @@ c) the run time is O(n) due to the fact that the function is increasing at a sam
 
 ## Exercise II
 
-since the egg gets broken when if it is thrown off floor f or higher, I would start at the middle and drop the egg  move upwards if it doesnt break and downwards if it does break.  Then I would find the middle for this new section and drop the egg and repeat until I find the "f" floor.  the runtime would be O(log(n)).
+since the egg gets broken when if it is thrown off floor f or higher, I would start at the middle and drop the egg  move upwards if it doesnt break and downwards if it does break.  Then I would find the middle for this new section and drop the egg and repeat until I find the "f" floor.  the runtime would be O(log(n)). via Binary Searching algorithm
 

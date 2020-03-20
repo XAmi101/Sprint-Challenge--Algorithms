@@ -15,9 +15,14 @@ def count_th(word):
 
     if len(word) == 0 or len(word) < 2:
         return 0
-    
+    # print(word[0], word[1], word[1:] )  
+
+    # if word[0] == 't' and word[1] == 'h':
     if word[:2] == "th":
-        return count_th(word[1:]) + 1
+        return count_th(word[1:]) + 1    
+
     else:
         return count_th(word[1:])
+    # print(count_th("thwosiothhtthth"))
+
 
