@@ -97,7 +97,45 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+
+# PLAN IT OUT!
+
+        self.set_light_on()
+        self.swap_item()
+        while self.light_is_on():
+            while self.can_move_right():
+                self.move_right()
+                if self.compare_item() == 1:
+                    self.swap_item()
+            # while self.can_move_left():
+            #     self.move_left()
+            #     if self.compare_item() != None:
+            #         self.swap_item()
+            while self.compare_item() != None:
+                self.move_left()
+            self.swap_item()
+            if self.can_move_right():
+                self.move_right()
+                self.swap_item()
+            else:
+                break
+
+"""
+PLAN:
+
+    to begin storting sets the light on  will turn off when the list is sorted
+    # move to the first item
+    # while the light is on iternate/loop through,
+        #while the robot can move to the right
+            #move right and keep moving right
+                # compare item and if the held item's value is greater, 
+                # swap items. (this will eventually be the item wit the least value, after which we move on to the left)
+        #Now compare that while the the robot's item nor the held item are none
+            #swap and move to the left and keep moving left until the robot can't anymore
+        after swaping and you reach the end IF you can move right, move right and swap the remainig items
+        else you at the end of the list and cannot move right anymore, Break and turn turn of the lights 
+"""
+    
 
 
 if __name__ == "__main__":
